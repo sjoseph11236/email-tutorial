@@ -15,7 +15,6 @@ public class Email {
 
     // call a mthod asking for the department - return the deparment
     this.department = setDeparment();
-    System.out.println("Department: " + this.department);
   }
 
   // Ask for the department
@@ -30,6 +29,15 @@ public class Email {
     else if (departmentChoice == 3) { return "Development"; }
     else { return ""; }
     
+  }
+
+  // Generate a random password
+  private String randomPassword(int length) {
+    final String PASSWORD_SET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%";
+    char[] password = new char[length];
+    for(int i = 0; i < length; i++) {
+      
+    }
   }
   // Set the mailbox capcity
   
